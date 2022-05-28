@@ -1,0 +1,250 @@
+#          _         _   _   ___       _
+#  _ __   /_\  _ __ | |_(_) / __\ ___ | |_
+# | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|
+# | | | /  _  \ | | | |_| / \/  \ (_) | |_
+# |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|
+
+# nAntiBot language archive
+# Do you need support? Join our Discord group: https://www.nickuc.com/discord
+# Meet our other plugins: https://www.nickuc.com
+
+Messages:
+  # Messages sent in the actionbar notification
+  actionbar-format:
+    active: "&6&l%animation% AntiBot &3➜ %status% &3▪ &7Entrada/s: %join_sec% &3▪ &7Motd/s: %motd_sec% &3▪ &7CPS: %cps% &3▪ &7Total: &f%total% &3▪ &7Cola: %queue% &3▪ &a⬆ &f%output% &3▪ &c⬇ &f%input%"
+    inactive: "&6&l%animation% AntiBot &3➜ %status% &3▪ &7Entrada/s: %join_sec% &3▪ &7Motd/s: %motd_sec% &3▪ &7Cola: %queue% &3▪ &a⬆ &f%output% &3▪ &c⬇ &f%input%"
+
+  # Messages related to the captcha system
+  captcha:
+    # Message sent when the player enters an invalid captcha.
+    invalid-captcha: "&cNo has completado correctamente el captcha, por favor inténtalo de nuevo."
+
+    # Message sent when a captcha is completed. #
+    successful-captcha: "&aEl desafío de captcha se completó con éxito."
+
+    # Message sent when player takes too long to complete captcha. #
+    delay-captcha-kick: "&cTardaste demasiado en completar el captcha."
+
+    head-captcha:
+      # Name given to captcha inventory.
+      inventory-title: "&8Elige la cabeza adecuada"
+
+      # Name given to the captcha item
+      item-name: "&7Haga clic aquí para elegir esta cabeza"
+
+      # Lore given to the captcha item
+      item-lore: []
+
+    banner-captcha:
+      # Name given to the captcha inventory.
+      inventory-title: "&8Ingrese el número correcto"
+
+      # Message sent in the title.
+      title-message: "&aIntroduce el número {0}"
+
+    shift-captcha:
+      # Message sent when you take time to release the shift-captcha. #
+      kick-too-long: "&cTe tomó bastante tiempo soltar el botón de cambio. Inténtalo de nuevo."
+
+      # Message sent when you release shift before captcha time. #
+      kick-release: "&cSoltaste el botón de cambio. Inténtalo de nuevo."
+
+      # Message sent on captcha by shift
+      captcha-release:
+        title: ""
+        subtitle: "&eSuelte el botón de cambio..."
+
+      # Message sent in captcha by shift
+      captcha-continue:
+        title: ""
+        subtitle: "&eContinuar presionando por {0} segundo(s)"
+
+      # Message sent in captcha by shift
+      captcha-join:
+        title: ""
+        subtitle: "&ePor favor presione el SHIFT por {0} secundo(s)"
+
+    map-captcha:
+      # Message sent when a player needs to solve one captcha per map.
+      message:
+        - ""
+        - " &aPara autenticarse, confirme su identidad."
+        - " &aHaga clic en la opción de abajo, el elemento que aparece en el mapa."
+        - ""
+
+  # Message sent when the player is not allowed to execute the antibot command.
+  insufficient-permission: "&cLo sentimos, pero no tiene permiso para ejecutar este comando."
+
+  # Title sent in messages with TitleBar.
+  title-message: "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+
+  # Prefix messages sent by chat.
+  chat-message-prefix: "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+
+  # Message sent when an attack is initiated.
+  bot-attack-started: "&7Se ha iniciado un ataque de bots..."
+
+  kick-messages:
+    # Message sent when the player tries to enter an invalid nickname.
+    invalid-nickname:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cLo sentimos, pero su nick no es válido."
+      - "&cEn caso de problemas, intente revisar el nick que escribió."
+
+    # Message sent to the player just attacked if started
+    attack-started-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cUn ataque de bot se inició hace unos momentos."
+      - "&cNecesitamos que vuelvas a iniciar sesión en el servidor."
+
+    # Message sent when the player logs in after updating the server list quickly
+    join-after-fast-motd-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cIngresó demasiado rápido después de actualizar el motd."
+      - "&cIntente no actualizar la lista de servidores cuando inicie sesión."
+
+    # Message sent when player rolls too fast.
+    fast-rejoin-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cIngresó demasiado rápido después de actualizar el motd."
+      - "&cEspere unos segundos y vuelva a iniciar sesión."
+
+    # Message sent when the player takes too long to replay.
+    slow-rejoin-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cTe tomó mucho tiempo volver a iniciar sesión."
+      - "&cVuelva a entrar para restablecer los desafíos."
+
+    # Message sent when player updates server list very quickly
+    fast-ping-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cActualizaste la lista de servidores muy rápido."
+      - "&cVuelva a iniciar sesión para reiniciar los desafíos."
+
+    # Message sent when player takes too long to add server to server list.
+    slow-ping-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cLe tomó bastante tiempo actualizar la lista de servidores."
+      - "&cVuelve a entrar para reiniciar los desafíos."
+
+    # Message sent when player doesn't do the challenge correctly
+    reconnect-on-motd-refresh-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cNo puede iniciar sesión en el servidor durante un desafío de actualización del servidor."
+      - "&cVuelva a iniciar sesión para reiniciar los desafíos."
+      - ""
+      - "&c¡Miembro! Lee y sigue los pasos correctamente, paso a paso"
+
+    # Message sent when the player updates the motd incorrectly.
+    motd-refresh-on-reconnect-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cNo puedes actualizar la lista de servidores en un desafío de unión."
+      - "&cVuelva a ingresar para reiniciar los desafíos."
+      - ""
+      - "&c¡Miembro! Lee y sigue los pasos correctamente, paso a paso"
+
+    # Message sent when the antibot requests that a user perform online verification.
+    online-verification-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cBienvenido!"
+      - "&cNecesitamos que confirmes tu identidad."
+      - ""
+      - "&cVe a &bab.nickuc.com e &cingresa el código &b{0}"
+      - "&cpara confirmar que no eres un robot."
+      - ""
+      - "&ePodrá iniciar sesión en cuestión de {1} segundos después de hacer esto."
+
+    # Message sent when a user first joins a session.
+    rejoin-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cBienvenido!"
+      - "&cNecesitamos que vuelva a iniciar sesión en el servidor para confirmar su inicio de sesión."
+
+    # Message sent in case of a bot attack, forcing the player to add the server.
+    motd-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cAgrega el servidor (Multijugador » Agregar servidor) y haga clic en 'Actualizar'."
+      - ""
+      - "&bCompleta los desafíos:"
+      - "1°- Entra &a✔"
+      - "2°- Vuelve a Entrar &a✔"
+      - "&73°- Actualizar lista de servidores &4✕"
+      - "&74°- Verificación finalizada &4✕"
+
+    # Message sent when user is being verified.
+    checking-kick-message:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cYou're being checked, please rejoin again."
+      - ""
+      - "&bCompleted challenges:"
+      - "1°- Entra &a✔"
+      - "2°- Vuelva a Entrar &a✔"
+      - "3°- Actualizar lista de servidores &a✔"
+      - "&74°- Verificación finalizada &4✕"
+
+    # Message sent when player is in a check queue.
+    checking-kick-message2:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cEstás siendo revisado, por favor vuelve a unirte..."
+      - "&cTu Posición: #{0}"
+
+    # Message sent when user is temporarily banned by antibot.
+    temporary-ban:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cFuiste baneado temporalmente por el antibot!"
+      - "&cTiempo restante: {0}"
+      - ""
+      - "&cMotivo del ban:"
+      - "&e'{1}'"
+
+    # Message sent when user is temporarily banned by antibot.
+    temporary-ban-less:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cFuiste baneado temporalmente por el antibot!"
+      - ""
+      - "&cMotivo del ban:"
+      - "&e'{0}'"
+
+    # Message sent when the user has a prohibited ip address.
+    Permanent-ban:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cEstabas permanentemente baneado por el antibot!"
+      - ""
+      - "&cMotivo del ban:"
+      - "&e'{0}'"
+
+    # Message sent when a player cannot be verified.
+    address-detection-error:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cOps, parece que no pudiste verificar tu dirección IP."
+      - "&cEspere unos segundos e intente iniciar sesión de nuevo."
+
+    # Message sent when the ip limits per player exceed the limit. #
+    address-limiter-warning:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cHa agotado los límites de su cuenta de IP."
+
+    # Message sent when a player is too likely to be a robot #
+    suspected-user-detected:
+      - "&a&lMine&e&lCaribe &7&l» &c&lANTIBOT"
+      - ""
+      - "&cLo sentimos, pero no podemos probar que no eres un robot. Razón: [{0}]."
